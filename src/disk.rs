@@ -3,8 +3,6 @@ use std::io::{self, Read, Seek, SeekFrom, Write};
 use std::path::Path;
 use zerocopy::{AsBytes, FromBytes};
 
-use crate::buffer::Page;
-
 pub const PAGE_SIZE: usize = 4096;
 
 #[derive(Debug, Clone, Copy, Eq, PartialEq, Hash, FromBytes, AsBytes)]
